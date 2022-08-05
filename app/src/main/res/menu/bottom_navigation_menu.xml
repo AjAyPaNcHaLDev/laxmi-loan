@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/page_1"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_icon_silhouette_svgrepo_com"
+        android:title="Home"/>
+    <item
+        android:id="@+id/page_2"
+        android:enabled="true"
+        android:icon="@drawable/ic_web_grid_svgrepo_com"
+        android:title="Dashboard"/>
+    <item
+        android:id="@+id/page_3"
+        android:enabled="true"
+        android:icon="@drawable/ic_avatar_svgrepo_com"
+        android:title="Log in"/>
+</menu>

@@ -1,87 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
+
     >
 
+    <include
+        android:layout_marginTop="5dp"
+        android:id="@+id/include"
+        layout="@layout/hello_constent_layout"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-    <androidx.cardview.widget.CardView
-        android:layout_marginTop="10dp"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp">
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+            app:layout_constraintTop_toBottomOf="@+id/cardView">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="494dp"
-            android:layout_height="match_parent"
-            android:padding="10dp">
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="N A"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.197" />
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="N A"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView2"
-                app:layout_constraintVertical_bias="0.369" />
+                <include layout="@layout/new_launch" />
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:text="Hello!"
-                android:textColor="#383838"
-                android:textSize="24dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/textView2"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.235" />
+                <include layout="@layout/personal_loan" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="What are you looking for today?"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.128"
-                app:layout_constraintStart_toEndOf="@+id/textView"
-                app:layout_constraintTop_toBottomOf="@+id/textView3"
-                app:layout_constraintVertical_bias="1.0" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-  <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:orientation="vertical">
-      <include layout="@layout/new_launch"/>
-      <include layout="@layout/personal_loan"/>
-      <include layout="@layout/home_loan"/>
-<include layout="@layout/mutual_fund"/>
+                <include layout="@layout/home_loan" />
 
-  </LinearLayout>
-</ScrollView>
-</LinearLayout>
+                <include layout="@layout/mutual_fund" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>
