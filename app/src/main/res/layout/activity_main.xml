@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
-
     >
 
     <include
@@ -20,10 +19,12 @@
 
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintTop_toBottomOf="@+id/include">
+
         <ScrollView
             android:id="@+id/scrollView2"
             android:layout_width="match_parent"
@@ -48,10 +49,5 @@
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/bottom_navigation_menu" />
+  <include layout="@layout/bottam_manu"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
