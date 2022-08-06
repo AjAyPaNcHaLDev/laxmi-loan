@@ -17,28 +17,28 @@ import com.qtc.getloan.fragments.Fragment3;
 
 
 public class MainActivity extends AppCompatActivity {
-Button gettingStartBtn;
+//Button gettingStartBtn;
     BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment1);
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Fragment1()).commit();
+        setContentView(R.layout.activity_main);
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Fragment1()).commit();
 
-        gettingStartBtn=findViewById(R.id.GettingStartBtn);
-        gettingStartBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-Intent i =new Intent(MainActivity.this, AdsActivity.class);
-startActivity(i);
-
-            }
-        });
+//        gettingStartBtn=findViewById(R.id.GettingStartBtn);
+//        gettingStartBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//Intent i =new Intent(MainActivity.this, AdsActivity.class);
+//startActivity(i);
+//
+//            }
+//        });
         bottomNavigationView=findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemReselectedListener(new BottomNavigationView.OnNavigationItemReselectedListener() {
             @Override
