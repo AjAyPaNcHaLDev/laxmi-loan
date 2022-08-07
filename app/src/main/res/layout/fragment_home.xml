@@ -22,6 +22,8 @@
         <include layout="@layout/new_launch"/>
         <include layout="@layout/personal_loan"/>
         <include layout="@layout/home_loan"/>
+        <include layout="@layout/cash_loan"/>
+        <include layout="@layout/mutual_fund"/>
     </LinearLayout>
 
     </ScrollView>
