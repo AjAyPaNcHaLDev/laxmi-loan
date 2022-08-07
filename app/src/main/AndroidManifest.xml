@@ -14,8 +14,12 @@
         android:theme="@style/Theme.GetLoan"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity2"
+            android:name=".AdsActivity"
             android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:label="@string/tit_activity_2" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

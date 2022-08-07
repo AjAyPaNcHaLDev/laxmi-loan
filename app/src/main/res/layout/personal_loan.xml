@@ -49,6 +49,7 @@
                 android:layout_height="208dp"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
+                android:id="@+id/personalLoanBanner"
                 android:layout_margin="10dp"
                 android:src="@drawable/personal_loan" />
 

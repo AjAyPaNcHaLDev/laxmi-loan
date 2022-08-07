@@ -50,7 +50,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="129dp"
                         android:background="@drawable/health_card_bg"
-
+                        android:id="@+id/healthCard"
                         android:padding="11dp">
 
                         <TextView

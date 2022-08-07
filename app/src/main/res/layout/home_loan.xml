@@ -57,6 +57,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     android:layout_margin="10dp"
+                    android:id="@+id/homeLoanBanner"
                     android:src="@drawable/home_loan" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -71,15 +72,16 @@
                         android:text="Loan against \n property "
                         android:textColor="@android:color/black"
                         android:textSize="10dp"
+                        android:id="@+id/loanAgentProperty"
                         android:textAllCaps="false"
-                        app:layout_constraintEnd_toStartOf="@+id/button2"
+                        app:layout_constraintEnd_toStartOf="@+id/transferExistingLoan"
                         app:layout_constraintHorizontal_bias="0.474"
-                        app:layout_constraintStart_toEndOf="@+id/button"
+                        app:layout_constraintStart_toEndOf="@+id/newHomeLoanBtn"
                         tools:layout_editor_absoluteY="0dp"
                         tools:ignore="MissingConstraints" />
 
                     <Button
-                        android:id="@+id/button"
+                        android:id="@+id/newHomeLoanBtn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
@@ -94,7 +96,7 @@
                         tools:ignore="MissingConstraints" />
 
                     <Button
-                        android:id="@+id/button2"
+                        android:id="@+id/transferExistingLoan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="28dp"
