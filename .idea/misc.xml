@@ -3,33 +3,37 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1525" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/drawable/health_card_bg.xml" value="0.1525" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/drawable/ic_avatar_svgrepo_com.xml" value="0.1525" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1525" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/drawable/ic_hand_money_euro_coin_icon.xml" value="0.1525" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/drawable/ic_heart_svgrepo.xml" value="0.1525" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/drawable/ic_home_care_icon.xml" value="0.1525" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/drawable/ic_loan_icon_hand.xml" value="0.1525" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/drawable/ic_money_svgrepo_com.xml" value="0.1525" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/drawable/ic_money_transactions_icon.xml" value="0.1525" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/drawable/ic_new_svgrepo_com.xml" value="0.1525" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/drawable/ic_web_grid_svgrepo_com.xml" value="0.1525" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/bottam_manu.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/cash_loan.xml" value="0.33" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/fragment1.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/fragment2.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/fragment3.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/fragment_dashboard.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/fragment_home.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/fragment_log_in.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/hello_constent_layout.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/new_launch.xml" value="0.33" />
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1365" />
-        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/drawable/health_card_bg.xml" value="0.172" />
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1365" />
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/drawable/ic_hand_money_euro_coin_icon.xml" value="0.1365" />
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/drawable/ic_home_care_icon.xml" value="0.1365" />
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1365" />
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/drawable/ic_loan_icon_hand.xml" value="0.1365" />
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/drawable/ic_money_transactions_icon.xml" value="0.1365" />
-        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/drawable/ic_new_svgrepo_com.xml" value="0.172" />
-        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/drawable/stock.xml" value="0.155" />
-        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/activity_ads.xml" value="0.12552083333333333" />
-        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/activity_main2.xml" value="0.1796875" />
-        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/activity_main3.xml" value="0.12421875" />
-        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/adsactivity.xml" value="0.1" />
-        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/bottam_manu.xml" value="0.1796875" />
-        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/cash_loan.xml" value="0.4466666666666667" />
-        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/fragment1.xml" value="0.1796875" />
-        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/fragment2.xml" value="0.1796875" />
-        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/fragment3.xml" value="0.1796875" />
-        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/hello_constent_layout.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/home_loan.xml" value="0.22" />
-        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/mutual_fund.xml" value="0.1796875" />
-        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/new_launch.xml" value="0.2351851851851852" />
-        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/personal_loan.xml" value="0.1640625" />
-        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
-        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.1" />
+        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
       </map>
     </option>
   </component>
