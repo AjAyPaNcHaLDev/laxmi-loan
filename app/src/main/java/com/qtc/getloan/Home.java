@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 
@@ -32,7 +33,7 @@ public class Home extends Fragment {
             personalLoanBanner,
             mutualFundBanner,
             homeLoanBanner;
-
+LinearLayout applyNow;
             ConstraintLayout healthCard;
 
 
@@ -121,6 +122,13 @@ public class Home extends Fragment {
             public void onClick(View view) {
                 Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
                 i.putExtra("title","New Home Loan");
+                getActivity().startActivity(i);
+            }
+        });   applyNow=view.findViewById(R.id.applyNow);
+        applyNow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i =new Intent(getActivity().getApplicationContext(),FinalPage.class);
                 getActivity().startActivity(i);
             }
         });
