@@ -7,11 +7,16 @@
     <item
         android:id="@+id/page_2"
         android:enabled="true"
-        android:icon="@drawable/ic_web_grid_svgrepo_com"
-        android:title="Dashboard"/>
+        android:icon="@drawable/ic_sack_dollar_solid"
+        android:title=""/>
     <item
         android:id="@+id/page_3"
         android:enabled="true"
-        android:icon="@drawable/ic_avatar_svgrepo_com"
-        android:title="Log in"/>
+        android:icon="@drawable/ic_web_grid_svgrepo_com"
+        android:title="categories"/>
+    <item
+        android:id="@+id/page_4"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_menu_24"
+        android:title="menu"/>
 </menu>

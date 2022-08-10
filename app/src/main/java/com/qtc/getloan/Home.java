@@ -34,6 +34,7 @@ public class Home extends Fragment {
             mutualFundBanner,
             homeLoanBanner;
 LinearLayout applyNow;
+LinearLayout permissionPopUp;
             ConstraintLayout healthCard;
 
 
@@ -45,7 +46,7 @@ LinearLayout applyNow;
         gettingStartBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
+                Intent i =new Intent(getActivity().getApplicationContext(),FinalPage.class);
                 i.putExtra("title","Getting Start");
                 getActivity().startActivity(i);
             }
@@ -128,7 +129,8 @@ LinearLayout applyNow;
         applyNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i =new Intent(getActivity().getApplicationContext(),FinalPage.class);
+                Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
+                i.putExtra("title","Apply Now ");
                 getActivity().startActivity(i);
             }
         });

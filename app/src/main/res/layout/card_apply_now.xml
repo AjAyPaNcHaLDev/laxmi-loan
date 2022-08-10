@@ -52,23 +52,24 @@
             android:textAlignment="center"
 android:padding="5dp"
             android:text="@string/card_apply_paragraph"/>
+
         <LinearLayout
+            android:id="@+id/applyNow"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:background="#FF6E40"
             android:gravity="center"
-            android:padding="5dp"
-            android:background="#0bcab8"
-            android:id="@+id/applyNow"
-            >
-           <TextView
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
                 android:text="Apply Now"
-                android:textSize="25dp"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:fontFamily="sans-serif-condensed-light"/>
+                android:textSize="25dp" />
 
             <ImageView
                 android:layout_width="wrap_content"

@@ -7,21 +7,54 @@
     android:orientation="vertical"
     tools:context=".MainActivity"
     >
-
-  <FrameLayout
+  <RelativeLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:id="@+id/container"
-      android:layout_above="@+id/bottom_navigation">
+      android:orientation="vertical"
+      >
 
-  </FrameLayout>
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation">
 
-  <com.google.android.material.bottomnavigation.BottomNavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    </FrameLayout>
+
+
+  <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:id="@+id/bottom_navigation"
-      app:menu="@menu/bottom_navigation_menu"
-      android:layout_alignParentBottom="true">
+      android:layout_alignParentBottom="true"
+      android:orientation="vertical"
+      android:id="@+id/containerMenu">
 
-  </com.google.android.material.bottomnavigation.BottomNavigationView>
+    <include layout="@layout/sub_menu"
+        android:visibility="gone"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffff"
+
+        app:menu="@menu/bottom_navigation_menu" />
+
+  </LinearLayout>
+
 </RelativeLayout>
+  <include
+      layout="@layout/permissionlayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+  <include layout="@layout/lat_start_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_alignParentBottom="true"
+      android:visibility="gone"
+      />
+
+    </RelativeLayout>
+

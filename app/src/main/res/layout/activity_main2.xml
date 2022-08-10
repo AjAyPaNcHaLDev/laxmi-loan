@@ -4,9 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
     tools:context=".MainActivity2">
 
+    <include
+        android:id="@+id/register_part_one"
+        layout="@layout/register_part_one"
 
+        />
+    <include layout="@layout/register_part_second"
+        android:id="@+id/register_part_second"
+android:visibility="gone"
+        />
 
 
 </RelativeLayout>

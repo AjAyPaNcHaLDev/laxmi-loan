@@ -16,8 +16,5 @@ public class FinalPage extends AppCompatActivity {
         }
     }
 
-    public void registerUser(View view) {
 
-
-    }
 }

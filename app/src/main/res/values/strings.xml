@@ -4,4 +4,24 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="tit_activity_2">Getting Start</string>
     <string name="card_apply_paragraph"><![CDATA[complete the application & and get evaluated to get the approved amount]]></string>
+    <string name="select_gender">Select Gender</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="address">Address</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="register_now">Register Now</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="next">next</string>
+    <string name="media_photos"><![CDATA[Media & Photos]]></string>
+    <string name="to_upload_selfie">To upload selfie</string>
+    <string name="device_information">Device Information</string>
+    <string name="to_securely_link_application_to_phone">To securely link application to phone</string>
+    <string name="we_need_a_few_permission">We need a few permission!</string>
+    <string name="to_check_your_eligibility_laon_amount"><![CDATA[To check your eligibility & laon amount]]></string>
+    <string name="sms">SMS</string>
+    <string name="loaction">Loaction</string>
+    <string name="all_your_information_is_100_safe_secure"><![CDATA[All your information is 100% Safe & Secure]]></string>
+    <string name="making_personal_loan_batter">MAKING PERSONAL LOAN BATTER!</string>
 </resources>
