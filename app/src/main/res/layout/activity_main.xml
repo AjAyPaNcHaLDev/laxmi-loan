@@ -48,7 +48,8 @@
   <include
       layout="@layout/permissionlayout"
       android:layout_width="match_parent"
-      android:layout_height="match_parent" />
+      android:layout_height="match_parent"
+      android:visibility="visible"/>
   <include layout="@layout/lat_start_layout"
       android:layout_width="match_parent"
       android:layout_height="match_parent"

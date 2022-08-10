@@ -29,7 +29,8 @@ BottomNavigationView bottomNavigationView;
         }
         subMenu=findViewById(R.id.subMenu);
 permissionPopUp=findViewById(R.id.permissionPopUp);
-        letStartPopup=findViewById(R.id.permissionPopUp);
+
+
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         getSupportFragmentManager().beginTransaction().replace(R.id.container,new Home()).commit();
        bottomNavigationView=findViewById(R.id.bottom_navigation);
