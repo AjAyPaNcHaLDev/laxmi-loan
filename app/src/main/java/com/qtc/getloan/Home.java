@@ -1,5 +1,6 @@
 package com.qtc.getloan;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -36,6 +37,7 @@ public class Home extends Fragment {
 LinearLayout applyNow;
 LinearLayout permissionPopUp;
             ConstraintLayout healthCard;
+
 
 
     @Override
@@ -134,6 +136,9 @@ LinearLayout permissionPopUp;
                 getActivity().startActivity(i);
             }
         });
+
+
+
 
         return view;
 
