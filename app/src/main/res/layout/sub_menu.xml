@@ -25,7 +25,7 @@ android:gravity="center"
               android:padding="10dp"
               android:layout_marginLeft="10dp"
               android:layout_marginBottom="5dp"
-              android:text="  Current Affairs" />
+              android:text="@string/terms_conditions" />
 
           <Button
               android:id="@+id/books"
@@ -34,7 +34,7 @@ android:gravity="center"
               android:layout_marginLeft="10dp"
               android:layout_marginBottom="5dp"
               android:padding="10dp"
-              android:text="  Books" />
+              android:text="  P P" />
 
           <Button
               android:id="@+id/e_book"
@@ -43,7 +43,7 @@ android:gravity="center"
               android:layout_marginLeft="10dp"
               android:layout_marginBottom="5dp"
               android:padding="10dp"
-              android:text="  E-Book" />
+              android:text="About" />
 
       </LinearLayout>
   </androidx.cardview.widget.CardView>

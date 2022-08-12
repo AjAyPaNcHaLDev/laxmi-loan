@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoanStep3">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_margin="14dp"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:text="Do you have Pan card"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pan"
+            android:gravity="center"
+            android:text="Please Choose Pan available Yes or No" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:onClick="No"
+                android:id="@+id/panNo"
+                android:backgroundTint="@color/design_default_color_secondary_variant"
+                android:text="No"/>
+
+            <Button
+                android:id="@+id/panYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:backgroundTint="@color/design_default_color_error"
+                android:onClick="Yes"
+                android:text="Yes" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/card_backgr">
+
+            <include layout="@layout/card_ads_box"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/design_default_color_primary"
+                android:text="back"
+                android:onClick="back"
+                />
+            <Button
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:text="@string/next"
+                android:onClick="next"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <include layout="@layout/card_ads_box"/>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

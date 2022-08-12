@@ -9,11 +9,13 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -24,10 +26,11 @@ public class MainActivity extends AppCompatActivity {
 BottomNavigationView bottomNavigationView;
     LinearLayout subMenu;
     Dialog permissionDialog;
-    AppCompatCheckBox permissionCheckBox;
+    CheckBox permissionCheckBox;
     Dialog  letStartDialog;
     Button terms_and_conditions;
     Button let_start;
+    boolean permission=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,7 +61,8 @@ BottomNavigationView bottomNavigationView;
                         startActivity(i);
                         return false;
                     case R.id.page_3:
-
+Intent j=new Intent(MainActivity.this,Categories.class);
+startActivity(j);
                         return false;
                     case R.id.page_4:
                         openSubMenu();
@@ -69,13 +73,12 @@ BottomNavigationView bottomNavigationView;
             }
         });
 
-
-
         welcomeDialogs();
     }
 
 
-private void welcomeDialogs(){
+
+    private void welcomeDialogs(){
     //Dialogs setup start
 
     terms_and_conditions=findViewById(R.id.terms_and_conditions);
@@ -102,14 +105,33 @@ private void welcomeDialogs(){
     }
 
 
+
     public void clickAgree(View view) {
 
-        Toast.makeText(MainActivity.this," that is ",Toast.LENGTH_LONG).show();
-        permissionDialog.dismiss();
-                letStartDialog.show();
+if(permission==true){
+    permissionDialog.dismiss();
+    letStartDialog.show();
+}else
+
+    Toast.makeText(MainActivity.this," please click to checkbox",Toast.LENGTH_LONG).show();
+
     }
     public void clickLetStart(View view) {
                 letStartDialog.dismiss();
+
+    }
+
+    public void isCheckedPermission(View view) {
+        CheckBox checkBox = (CheckBox)view;
+        if(checkBox.isChecked())
+            permission=true;
+        else
+            permission=false;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
 
     }
 }

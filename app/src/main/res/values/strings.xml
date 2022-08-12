@@ -24,4 +24,6 @@
     <string name="loaction">Loaction</string>
     <string name="all_your_information_is_100_safe_secure"><![CDATA[All your information is 100% Safe & Secure]]></string>
     <string name="making_personal_loan_batter">MAKING PERSONAL LOAN BATTER!</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="enter_date_of_birth">Enter Date Of Birth</string>
 </resources>
