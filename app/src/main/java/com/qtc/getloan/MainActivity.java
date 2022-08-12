@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.PersistableBundle;
@@ -21,6 +22,8 @@ import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.security.PrivateKey;
+
 
 public class MainActivity extends AppCompatActivity {
 BottomNavigationView bottomNavigationView;
@@ -29,8 +32,10 @@ BottomNavigationView bottomNavigationView;
     CheckBox permissionCheckBox;
     Dialog  letStartDialog;
     Button terms_and_conditions;
-
+public static  final String SHARED_PREF="SHARED_PREF";
     boolean permission=false;
+    SharedPreferences sharedPreferences;
+    SharedPreferences.Editor editor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,10 +43,10 @@ BottomNavigationView bottomNavigationView;
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
+
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         getSupportFragmentManager().beginTransaction().replace(R.id.container,new Home()).commit();
         subMenu=findViewById(R.id.subMenu);
-
 
         //        bootom navbar setup
        bottomNavigationView=findViewById(R.id.bottom_navigation);
@@ -72,16 +77,17 @@ startActivity(j);
                 return true;
             }
         });
-
-        welcomeDialogs();
-    }
+         sharedPreferences= getSharedPreferences(SHARED_PREF,MODE_PRIVATE);
+        editor=sharedPreferences.edit();
+if(!sharedPreferences.getBoolean("permission",false)){
+    welcomeDialogs();
+}
+  }
 
 
 
     private void welcomeDialogs(){
-    //Dialogs setup start
-
-
+        //Dialogs setup start
     terms_and_conditions=findViewById(R.id.terms_and_conditions);
     permissionDialog=new Dialog(MainActivity.this);
     permissionDialog.getWindow().setBackgroundDrawable(getResources().getDrawable(R.drawable.card_backgr));
@@ -110,10 +116,13 @@ startActivity(j);
     public void clickAgree(View view) {
 
 if(permission==true){
+    editor.putBoolean("permission",true);
+    editor.apply();
     permissionDialog.dismiss();
     letStartDialog.show();
 }else
-
+    editor.putBoolean("permission",false);
+        editor.apply();
     Toast.makeText(MainActivity.this," please click to checkbox",Toast.LENGTH_LONG).show();
 
     }
