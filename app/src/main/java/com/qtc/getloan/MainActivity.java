@@ -29,7 +29,7 @@ BottomNavigationView bottomNavigationView;
     CheckBox permissionCheckBox;
     Dialog  letStartDialog;
     Button terms_and_conditions;
-    Button let_start;
+
     boolean permission=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,6 +80,7 @@ startActivity(j);
 
     private void welcomeDialogs(){
     //Dialogs setup start
+
 
     terms_and_conditions=findViewById(R.id.terms_and_conditions);
     permissionDialog=new Dialog(MainActivity.this);
