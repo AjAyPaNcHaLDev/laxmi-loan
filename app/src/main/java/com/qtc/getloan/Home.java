@@ -36,7 +36,7 @@ import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 
 public class Home extends Fragment {
 
-            Button gettingStartBtn,
+            Button
             loanAgentProperty,
             newHomeLoanBtn,
             transferExistingLoan;
@@ -45,7 +45,6 @@ public class Home extends Fragment {
             mutualFundBanner,
             homeLoanBanner;
             LinearLayout applyNow;
-            ConstraintLayout healthCard;
 
 
 
@@ -55,32 +54,12 @@ public class Home extends Fragment {
                              Bundle savedInstanceState) {
 
   View  view=inflater.inflate(R.layout.fragment_home,container,false);
-        gettingStartBtn= view.findViewById(R.id.GettingStartBtn);
- gettingStartBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i =new Intent(getActivity().getApplicationContext(),FinalPage.class);
-                i.putExtra("title","Getting Start");
-                getActivity().startActivity(i);
-            }
-        });
 
-        healthCard=view.findViewById(R.id.healthCard);
-        healthCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i =new Intent(getActivity().getApplicationContext(),AdsActivity.class);
-                i.putExtra("title","Health");
-                getActivity().startActivity(i);
-                new Loadads().loadAds(getActivity());
-            }
-        });
-
-        caseLoanBanner=view.findViewById(R.id.caseLoanBanner);
+  caseLoanBanner=view.findViewById(R.id.caseLoanBanner);
         caseLoanBanner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new Loadads().loadAds(getActivity());
+                new Loadads().interstitialAdLoad(getActivity());
 
                 Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
                 i.putExtra("title","Cash Loan");
@@ -92,7 +71,7 @@ public class Home extends Fragment {
         mutualFundBanner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new Loadads().loadAds(getActivity());
+                new Loadads().interstitialAdLoad(getActivity());
                 Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
                 i.putExtra("title","Mutual Fund");
                 getActivity().startActivity(i);
@@ -102,7 +81,7 @@ public class Home extends Fragment {
         personalLoanBanner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new Loadads().loadAds(getActivity());
+                new Loadads().interstitialAdLoad(getActivity());
                 Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
                 i.putExtra("title","Personal Loan");
                 getActivity().startActivity(i);
@@ -112,7 +91,7 @@ public class Home extends Fragment {
         homeLoanBanner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new Loadads().loadAds(getActivity());
+                new Loadads().interstitialAdLoad(getActivity());
                 Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
                 i.putExtra("title","Home Loan");
                 getActivity().startActivity(i);
@@ -122,7 +101,7 @@ public class Home extends Fragment {
         loanAgentProperty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new Loadads().loadAds(getActivity());
+                new Loadads().interstitialAdLoad(getActivity());
                 Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
                 i.putExtra("title","Loan Agent Property");
                 getActivity().startActivity(i);
@@ -132,7 +111,7 @@ public class Home extends Fragment {
         transferExistingLoan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new Loadads().loadAds(getActivity());
+                new Loadads().interstitialAdLoad(getActivity());
                 Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
                 i.putExtra("title","Transfer Existing Loan");
                 getActivity().startActivity(i);
@@ -142,7 +121,7 @@ public class Home extends Fragment {
         newHomeLoanBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new Loadads().loadAds(getActivity());
+                new Loadads().interstitialAdLoad(getActivity());
                 Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
                 i.putExtra("title","New Home Loan");
                 getActivity().startActivity(i);
@@ -151,7 +130,7 @@ public class Home extends Fragment {
         applyNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new Loadads().loadAds(getActivity());
+                new Loadads().interstitialAdLoad(getActivity());
                 Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
                 i.putExtra("title","Apply Now ");
                 getActivity().startActivity(i);
@@ -164,18 +143,12 @@ public class Home extends Fragment {
 
 
 
-        Loadads.mAdView = view.findViewById(R.id.adView);
-        Loadads.adView2 = view.findViewById(R.id.adView2);
-        Loadads.adView3 = view.findViewById(R.id.adView3);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        Loadads.mAdView.loadAd(adRequest);
-        AdRequest adRequest1 = new AdRequest.Builder().build();
-        Loadads.adView2.loadAd(adRequest1);
-        AdRequest adRequest2 = new AdRequest.Builder().build();
-        Loadads.adView3.loadAd(adRequest2);
+        Loadads.adView = view.findViewById(R.id.adView);
+        Loadads.adRequest= new AdRequest.Builder().build();
+        Loadads.adView.loadAd(Loadads.adRequest);
 
       //////////////////////////////////////////
-        new Loadads().loadAds(getActivity());
+        new Loadads().interstitialAdLoad(getActivity());
 
         return view;
 

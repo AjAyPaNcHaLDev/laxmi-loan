@@ -10,6 +10,6 @@ public class PrivacyPolicy extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_privacy_policy);
-        new Loadads().loadAds(this);
+        new Loadads().interstitialAdLoad(this);
     }
 }

@@ -23,7 +23,7 @@ String title;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main2);
-        new Loadads().loadAds(this);
+        new Loadads().interstitialAdLoad(this);
         Intent intent=getIntent();
     title=intent.getStringExtra("title");
 
@@ -57,7 +57,7 @@ String title;
     }
 
     public void registerNowHandler(View view) {
-        new Loadads().loadAds(this);
+        new Loadads().interstitialAdLoad(this);
         parms.setPassword(password.getText().toString());
         parms.setAddress(address.toString());
         parms.setMobile(mobile.getText().toString());

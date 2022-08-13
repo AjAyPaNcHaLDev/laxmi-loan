@@ -44,7 +44,6 @@ public static  final String SHARED_PREF="SHARED_PREF";
     boolean permission=false;
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,7 +57,6 @@ public static  final String SHARED_PREF="SHARED_PREF";
             }
         });
 
-new Loadads().loadAds(this);
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         getSupportFragmentManager().beginTransaction().replace(R.id.container,new Home()).commit();
         subMenu=findViewById(R.id.subMenu);
@@ -164,7 +162,7 @@ if(permission==true){
     }
 
     public void aboutPage(View view) {
-        startActivity(new Intent(MainActivity.this,PrivacyPolicy.class));
+        startActivity(new Intent(MainActivity.this,AboutPage.class));
     }
 
     public void termsCondition(View view) {

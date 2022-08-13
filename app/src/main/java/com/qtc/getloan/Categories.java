@@ -15,7 +15,7 @@ public class Categories extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categories);
         getSupportActionBar().setTitle("Categories");
-        new Loadads().loadAds(this);
+        new Loadads().interstitialAdLoad(this);
     }
 
     public void startLoanStep(View view) {
@@ -30,15 +30,15 @@ return;
     }
 
     public void studentLoan(View view) {
-        new Loadads().loadAds(this);
+        new Loadads().interstitialAdLoad(this);
     }
 
     public void bankLoan(View view) {
-        new Loadads().loadAds(this);
+        new Loadads().interstitialAdLoad(this);
     }
 
     public void insurance(View view) {
-        new Loadads().loadAds(this);
+        new Loadads().interstitialAdLoad(this);
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse("https://theinsuranceupdates.com"));
         startActivity(i);

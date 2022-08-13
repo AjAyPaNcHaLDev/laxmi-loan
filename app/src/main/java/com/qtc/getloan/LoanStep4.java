@@ -20,7 +20,7 @@ public class LoanStep4 extends AppCompatActivity {
         jobNo=findViewById(R.id.jobNo);
                 jobYes=findViewById(R.id.jobYes);
         jobType=findViewById(R.id.jobType);
-        new Loadads().loadAds(this);
+        new Loadads().interstitialAdLoad(this);
     }
     public void next(View view) {
 

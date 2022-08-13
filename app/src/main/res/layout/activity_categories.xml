@@ -15,7 +15,6 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical">
-    <include layout="@layout/card_ads_box"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -31,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="15dp"
             android:gravity="center"
             android:background="@drawable/cat_item_bg"
             android:orientation="horizontal">
@@ -60,7 +59,7 @@ android:textColor="#8BC34A"
             android:padding="5dp"
             android:gravity="center"
 android:onClick="studentLoan"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="15dp"
             android:background="@drawable/cat_item_bg"
             android:orientation="horizontal">
 
@@ -89,7 +88,7 @@ android:onClick="studentLoan"
             android:padding="5dp"
             android:gravity="center"
 android:onClick="bankLoan"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="15dp"
             android:background="@drawable/cat_item_bg"
             android:orientation="horizontal">
 
@@ -114,7 +113,7 @@ android:onClick="bankLoan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="15dp"
             android:gravity="center"
             android:onClick="insurance"
             android:background="@drawable/cat_item_bg"
@@ -138,7 +137,16 @@ android:onClick="bankLoan"
                 android:layout_margin="5dp"
                 android:text="Insurance"/>
         </LinearLayout>
-            <include layout="@layout/card_ads_box"/>
+
+            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adViewCatPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                ads:adSize="400x250"
+                ads:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
+
         </LinearLayout>
 
     </ScrollView>

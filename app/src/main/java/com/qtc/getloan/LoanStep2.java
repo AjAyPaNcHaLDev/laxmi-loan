@@ -18,7 +18,7 @@ TextView loan;
         loanYes=findViewById(R.id.loanYes);
                 loanNo=findViewById(R.id.loanNo);
                 loan=findViewById(R.id.loan);
-        new Loadads().loadAds(this);
+        new Loadads().interstitialAdLoad(this);
 
     }
 

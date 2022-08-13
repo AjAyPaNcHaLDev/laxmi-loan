@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PrivacyPolicy">
+    tools:context=".AboutPage">
 
 
     <LinearLayout
@@ -18,25 +18,29 @@
             android:textStyle="bold"
             android:textSize="30dp"
 
-            android:text="@string/privacy_policy"
+            android:text="About Us"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"
+            android:padding="15dp"
             android:layout_margin="10dp"
             android:fontFamily="sans-serif"
-            android:text="@string/t__condition"
+            android:textSize="18dp"
+            android:text="@string/about"
             />
 
-        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/adViewStep1"
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adViewAbout"
+            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            ads:adSize="400x200"
-            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
-
+            android:layout_alignParentBottom="true"
+            ads:adSize="400x100"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+        </com.google.android.gms.ads.AdView>
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

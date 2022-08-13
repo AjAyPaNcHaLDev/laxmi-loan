@@ -21,7 +21,7 @@ EditText inp_amount    ,inp_time;
         inp_amount.setText(parms.getAmount());
                 inp_time.setText(parms.getTime());
         }
-        new Loadads().loadAds(this);
+        new Loadads().interstitialAdLoad(this);
     }
 
     public void sendToLoanStep2(View view) {

@@ -14,9 +14,13 @@ import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 
 public class Loadads extends AppCompatActivity {
     public  static InterstitialAd mInterstitialAd;
-    public static AdView mAdView,adView2,adView3;
-    public  void loadAds(Activity activity){
-        AdRequest adRequest = new AdRequest.Builder().build();
+    public static AdView adView;
+   public static  AdRequest adRequest ;
+    public  void interstitialAdLoad(Activity activity){
+
+         adRequest = new AdRequest.Builder().build();
+//
+//
         InterstitialAd.load(activity,"ca-app-pub-3940256099942544/1033173712", adRequest,
                 new InterstitialAdLoadCallback() {
                     @Override

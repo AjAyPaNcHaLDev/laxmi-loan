@@ -4,11 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class AdsActivity extends AppCompatActivity {
+public class AboutPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ads);
+        setContentView(R.layout.activity_about_page);
+        new Loadads().interstitialAdLoad(AboutPage.this);
     }
 }

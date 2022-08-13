@@ -31,6 +31,7 @@ getSupportActionBar().setTitle("Loan Details");
 
 
     public void finished(View view) {
+        new Loadads().interstitialAdLoad(FinalPage.this);
         startActivity(new Intent(FinalPage.this,MainActivity.class));
 
     }
