@@ -25,6 +25,7 @@ android:gravity="center"
               android:padding="10dp"
               android:layout_marginLeft="10dp"
               android:layout_marginBottom="5dp"
+              android:onClick="termsCondition"
               android:text="@string/terms_conditions" />
 
           <Button
@@ -34,7 +35,8 @@ android:gravity="center"
               android:layout_marginLeft="10dp"
               android:layout_marginBottom="5dp"
               android:padding="10dp"
-              android:text="  P P" />
+              android:onClick="privacyPolicy"
+              android:text="@string/privacy_policy" />
 
           <Button
               android:id="@+id/e_book"
@@ -43,7 +45,8 @@ android:gravity="center"
               android:layout_marginLeft="10dp"
               android:layout_marginBottom="5dp"
               android:padding="10dp"
-              android:text="About" />
+              android:onClick="aboutPage"
+                  android:text="About" />
 
       </LinearLayout>
   </androidx.cardview.widget.CardView>

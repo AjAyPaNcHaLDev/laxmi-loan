@@ -24,6 +24,13 @@
     <string name="loaction">Loaction</string>
     <string name="all_your_information_is_100_safe_secure"><![CDATA[All your information is 100% Safe & Secure]]></string>
     <string name="making_personal_loan_batter">MAKING PERSONAL LOAN BATTER!</string>
-    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="terms_conditions"><![CDATA[T & C]]></string>
     <string name="enter_date_of_birth">Enter Date Of Birth</string>
+    <string name="privacy_policy"><![CDATA[Privacy & Policy]]></string>
+    <string name="terms_conditions2">Terms Conditions</string>
+    <string name="t__condition">The qualification, age, and experience details.\n The transactions made with the applicant’s bank. \nThe monthly and yearly income. \nThe current employer and the type of job he/she pursues.\n The nature of the business (applicable only for a self-employed). \nThe ability to repay the loan amount with the set interest rate.</string>
+        <string name="pl">
+
+This privacy policy (“Privacy Policy”) is an electronic record in the form of an electronic contract formed under the Information Technology Act, 2000 and the rules made thereunder. This Privacy Policy does not require any physical, electronic or digital signature. This Privacy Policy is a legally binding document between you and FlexiLoans. The terms of this Privacy Policy will be effective upon your acceptance of the same, by clicking on the “I Accept” checkbox available at https://loans.flexiloans.com/ and will govern the relationship between you and FlexiLoans for your use of the Website. By clicking on the “I Accept” checkbox, you also authorize us to contact you if you are registered with DND/NDNC registry. This Privacy Policy describes the information that we collect from you, how We collect this information (directly or through third parties or which is automatically generated, when you interact with our Website and our mobile application (Mobile App)) and what We do with it after We collect it.
+        </string>
 </resources>

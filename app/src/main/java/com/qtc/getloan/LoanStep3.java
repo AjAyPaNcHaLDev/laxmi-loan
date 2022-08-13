@@ -20,13 +20,16 @@ public class LoanStep3 extends AppCompatActivity {
         panNo=findViewById(R.id.panNo);
         panYes=findViewById(R.id.panYes);
         pan=findViewById(R.id.pan);
+        new Loadads().loadAds(this);
     }
     public void next(View view) {
+
         startActivity(  new Intent(LoanStep3.this,LoanStep4.class));
     }
 
     public void back(View view) {
 //        startActivity(  new Intent(LoanStep3.this,LoanStep2.class));
+
         finish();
     }
 

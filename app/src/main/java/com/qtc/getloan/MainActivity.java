@@ -2,15 +2,14 @@ package com.qtc.getloan;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
-import androidx.appcompat.widget.AppCompatCheckBox;
 import androidx.fragment.app.Fragment;
 
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -20,10 +19,19 @@ import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.LoadAdError;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.OnUserEarnedRewardListener;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.google.android.gms.ads.rewarded.RewardItem;
+import com.google.android.gms.ads.rewarded.RewardedAd;
+import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
-import java.security.PrivateKey;
-
+import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 
 public class MainActivity extends AppCompatActivity {
 BottomNavigationView bottomNavigationView;
@@ -36,6 +44,7 @@ public static  final String SHARED_PREF="SHARED_PREF";
     boolean permission=false;
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +52,13 @@ public static  final String SHARED_PREF="SHARED_PREF";
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
+        MobileAds.initialize(MainActivity.this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
 
+new Loadads().loadAds(this);
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         getSupportFragmentManager().beginTransaction().replace(R.id.container,new Home()).commit();
         subMenu=findViewById(R.id.subMenu);
@@ -83,8 +98,6 @@ if(!sharedPreferences.getBoolean("permission",false)){
     welcomeDialogs();
 }
   }
-
-
 
     private void welcomeDialogs(){
         //Dialogs setup start
@@ -143,5 +156,18 @@ if(permission==true){
     public void onBackPressed() {
         super.onBackPressed();
 
+    }
+
+    public void privacyPolicy(View view) {
+
+        startActivity(new Intent(MainActivity.this,PrivacyPolicy.class));
+    }
+
+    public void aboutPage(View view) {
+        startActivity(new Intent(MainActivity.this,PrivacyPolicy.class));
+    }
+
+    public void termsCondition(View view) {
+        startActivity(new Intent(MainActivity.this, TermCondition.class));
     }
 }

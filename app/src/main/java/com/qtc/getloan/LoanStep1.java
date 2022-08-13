@@ -21,6 +21,7 @@ EditText inp_amount    ,inp_time;
         inp_amount.setText(parms.getAmount());
                 inp_time.setText(parms.getTime());
         }
+        new Loadads().loadAds(this);
     }
 
     public void sendToLoanStep2(View view) {
@@ -29,6 +30,8 @@ EditText inp_amount    ,inp_time;
             parms.setAmount( inp_amount.getText().toString());
             parms.setTime(inp_time.getText().toString());
             startActivity(  new Intent(LoanStep1.this,LoanStep2.class));
+
+
         }
         else{
             Toast.makeText(getApplicationContext(),"please fill field",Toast.LENGTH_LONG).show();
