@@ -14,6 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:gravity="center"
         android:visibility="visible">
 
         <TextView
@@ -63,6 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_margin="10dp"
+            android:gravity="center"
             android:background="@drawable/card_backgr">
             <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/adViewStep2"
@@ -104,7 +106,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             ads:adSize="400x250"
-            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
 
     </LinearLayout>
 </ScrollView>

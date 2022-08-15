@@ -19,7 +19,8 @@ TextView loan;
                 loanNo=findViewById(R.id.loanNo);
                 loan=findViewById(R.id.loan);
         new Loadads().interstitialAdLoad(this);
-
+        new Loadads().adsBanner(findViewById(R.id.adViewStep2));
+        new Loadads().adsBanner(findViewById(R.id.adViewStep3));
     }
 
     public void next(View view) {

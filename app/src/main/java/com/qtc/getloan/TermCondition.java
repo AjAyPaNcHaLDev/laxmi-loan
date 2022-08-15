@@ -11,5 +11,6 @@ public class TermCondition extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_term_condition);
         new Loadads().interstitialAdLoad(this);
+        new Loadads().adsBanner(findViewById(R.id.adViewStep14));
     }
 }

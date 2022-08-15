@@ -26,7 +26,7 @@ getSupportActionBar().setTitle("Loan Details");
                 Amount.setText(parms.getAmount());
         time.setText(parms.getTime());
                 panCard.setText(parms.getPan_card());
-
+        new Loadads().adsBanner(findViewById(R.id.adViewFinal));
     }
 
 

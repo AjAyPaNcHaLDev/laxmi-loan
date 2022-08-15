@@ -16,27 +16,40 @@
         <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/drawable/ic_money_transactions_icon.xml" value="0.1525" />
         <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/drawable/ic_new_svgrepo_com.xml" value="0.1525" />
         <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/drawable/ic_web_grid_svgrepo_com.xml" value="0.1525" />
-        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/activity_about_page.xml" value="0.1" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/activity_about_page.xml" value="0.22" />
         <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/activity_ads.xml" value="0.18385416666666668" />
-        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/activity_loan_step1.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/activity_categories.xml" value="0.21" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/activity_final_page.xml" value="0.15625" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/activity_loan_step1.xml" value="0.14" />
         <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/activity_loan_step2.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/activity_loan_step3.xml" value="0.15625" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/activity_loan_step4.xml" value="0.15625" />
         <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/activity_main2.xml" value="0.1" />
         <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/activity_privacy_policy.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/activity_term_condition.xml" value="0.15625" />
         <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/bottam_manu.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/card_ads_box.xml" value="0.25" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/card_apply_now.xml" value="0.13177083333333334" />
         <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/cash_loan.xml" value="0.33" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/dot_loader.xml" value="0.15625" />
         <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/fragment1.xml" value="0.18385416666666668" />
         <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/fragment2.xml" value="0.18385416666666668" />
         <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/fragment3.xml" value="0.18385416666666668" />
         <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/fragment_dashboard.xml" value="0.15989583333333332" />
-        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/fragment_home.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/fragment_home.xml" value="0.17662801070472792" />
         <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/fragment_log_in.xml" value="0.15989583333333332" />
-        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/hello_constent_layout.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/hello_constent_layout.xml" value="0.67" />
         <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/home_loan.xml" value="0.1390625" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/lat_start_layout.xml" value="0.15625" />
         <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/mutual_fund.xml" value="0.18385416666666668" />
         <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/new_launch.xml" value="0.33" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/permissionlayout.xml" value="0.15625" />
         <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/personal_loan.xml" value="0.1390625" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/register_part_one.xml" value="0.15625" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/register_part_second.xml" value="0.15625" />
         <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/step_process.xml" value="0.1375" />
+        <entry key="..\:/Users/AjAyPaNcHaL/StudioProjects/GETLoan/app/src/main/res/layout/sub_menu.xml" value="0.15625" />
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1365" />
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/drawable/card_backgr.xml" value="0.113" />
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/drawable/cat_item_bg.xml" value="0.113" />

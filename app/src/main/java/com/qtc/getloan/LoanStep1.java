@@ -15,6 +15,7 @@ EditText inp_amount    ,inp_time;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loan_step1);
+        new Loadads().adsBanner(findViewById(R.id.adViewStep1));
         inp_amount=findViewById(R.id.inp_amount);
                 inp_time=findViewById(R.id.inp_time);
     if(parms.getAmount()!=null&& parms.getTime()!=null){

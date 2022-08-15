@@ -16,6 +16,8 @@ public class Categories extends AppCompatActivity {
         setContentView(R.layout.activity_categories);
         getSupportActionBar().setTitle("Categories");
         new Loadads().interstitialAdLoad(this);
+        new Loadads().adsBanner(findViewById(R.id.adViewCatPage));
+
     }
 
     public void startLoanStep(View view) {

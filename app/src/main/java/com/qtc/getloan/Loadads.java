@@ -2,6 +2,7 @@ package com.qtc.getloan;
 
 import android.app.Activity;
 import android.util.Log;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,12 +17,12 @@ public class Loadads extends AppCompatActivity {
     public  static InterstitialAd mInterstitialAd;
     public static AdView adView;
    public static  AdRequest adRequest ;
-    public  void interstitialAdLoad(Activity activity){
+    public  void interstitialAdLoad(Activity activity) {
 
-         adRequest = new AdRequest.Builder().build();
+        adRequest = new AdRequest.Builder().build();
 //
 //
-        InterstitialAd.load(activity,"ca-app-pub-3940256099942544/1033173712", adRequest,
+        InterstitialAd.load(activity, "ca-app-pub-3940256099942544/1033173712", adRequest,
                 new InterstitialAdLoadCallback() {
                     @Override
                     public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
@@ -43,4 +44,11 @@ public class Loadads extends AppCompatActivity {
 
     }
 
+
+    public <T extends View> void adsBanner(T viewById) {
+        Loadads.adView = (AdView) viewById;
+//        adView.setAdUnitId("ca-app-pub-3940256099942544/6300978111");
+        Loadads.adRequest= new AdRequest.Builder().build();
+        Loadads.adView.loadAd(Loadads.adRequest);
+    }
 }

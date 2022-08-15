@@ -11,5 +11,6 @@ public class PrivacyPolicy extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_privacy_policy);
         new Loadads().interstitialAdLoad(this);
+        new Loadads().adsBanner(findViewById(R.id.adViewPriv));
     }
 }

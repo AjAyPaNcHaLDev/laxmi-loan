@@ -60,7 +60,7 @@
                 android:id="@+id/inpDob"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="30-12-1999"
+                android:hint="DD-MM-YYYY"
                 android:inputType="textEmailAddress" />
             <Button
                 android:id="@+id/registerBtn"

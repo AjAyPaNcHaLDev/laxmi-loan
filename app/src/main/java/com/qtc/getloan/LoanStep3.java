@@ -21,6 +21,8 @@ public class LoanStep3 extends AppCompatActivity {
         panYes=findViewById(R.id.panYes);
         pan=findViewById(R.id.pan);
         new Loadads().interstitialAdLoad(this);
+        new Loadads().adsBanner(findViewById(R.id.adViewStep4));
+        new Loadads().adsBanner(findViewById(R.id.adViewStep6));
     }
     public void next(View view) {
 

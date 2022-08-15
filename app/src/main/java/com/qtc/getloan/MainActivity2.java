@@ -25,6 +25,8 @@ String title;
             setContentView(R.layout.activity_main2);
         new Loadads().interstitialAdLoad(this);
         Intent intent=getIntent();
+        new Loadads().adsBanner(findViewById(R.id.adViewStep10));
+        new Loadads().adsBanner(findViewById(R.id.adViewStep11));
     title=intent.getStringExtra("title");
 
     getSupportActionBar().setTitle(title);

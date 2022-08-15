@@ -46,9 +46,6 @@ public class Home extends Fragment {
             homeLoanBanner;
             LinearLayout applyNow;
 
-
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -67,16 +64,16 @@ public class Home extends Fragment {
             }
         });
 
-        mutualFundBanner=view.findViewById(R.id.mutualFundBanner);
-        mutualFundBanner.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                new Loadads().interstitialAdLoad(getActivity());
-                Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
-                i.putExtra("title","Mutual Fund");
-                getActivity().startActivity(i);
-            }
-        });
+//        mutualFundBanner=view.findViewById(R.id.mutualFundBanner);
+//        mutualFundBanner.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                new Loadads().interstitialAdLoad(getActivity());
+//                Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
+//                i.putExtra("title","Mutual Fund");
+//                getActivity().startActivity(i);
+//            }
+//        });
         personalLoanBanner=view.findViewById(R.id.personalLoanBanner);
         personalLoanBanner.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -126,7 +123,9 @@ public class Home extends Fragment {
                 i.putExtra("title","New Home Loan");
                 getActivity().startActivity(i);
             }
-        });   applyNow=view.findViewById(R.id.applyNow);
+        });
+
+        applyNow=view.findViewById(R.id.applyNow);
         applyNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -138,15 +137,9 @@ public class Home extends Fragment {
         });
 
 
-
-
-
-
-
-        Loadads.adView = view.findViewById(R.id.adView);
-        Loadads.adRequest= new AdRequest.Builder().build();
-        Loadads.adView.loadAd(Loadads.adRequest);
-
+new Loadads().adsBanner(view.findViewById(R.id.adView));
+new Loadads().adsBanner(view.findViewById(R.id.adViewHome2));
+new Loadads().adsBanner(view.findViewById(R.id.adViewStep4));
       //////////////////////////////////////////
         new Loadads().interstitialAdLoad(getActivity());
 
@@ -154,6 +147,8 @@ public class Home extends Fragment {
 
 
     }
+
+
 
 
 
