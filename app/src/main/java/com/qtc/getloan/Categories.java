@@ -32,11 +32,14 @@ return;
     }
 
     public void studentLoan(View view) {
-        new Loadads().interstitialAdLoad(this);
+
+        startActivity(  new Intent(Categories.this,LoanStep3.class));
     }
 
     public void bankLoan(View view) {
-        new Loadads().interstitialAdLoad(this);
+
+
+        startActivity(  new Intent(Categories.this,MainActivity2.class));
     }
 
     public void insurance(View view) {

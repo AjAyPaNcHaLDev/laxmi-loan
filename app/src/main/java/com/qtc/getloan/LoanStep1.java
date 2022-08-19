@@ -15,6 +15,7 @@ EditText inp_amount    ,inp_time;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loan_step1);
+        new Loadads().interstitialAdLoad(this);
         new Loadads().adsBanner(findViewById(R.id.adViewStep1));
         inp_amount=findViewById(R.id.inp_amount);
                 inp_time=findViewById(R.id.inp_time);
@@ -22,7 +23,7 @@ EditText inp_amount    ,inp_time;
         inp_amount.setText(parms.getAmount());
                 inp_time.setText(parms.getTime());
         }
-        new Loadads().interstitialAdLoad(this);
+
     }
 
     public void sendToLoanStep2(View view) {

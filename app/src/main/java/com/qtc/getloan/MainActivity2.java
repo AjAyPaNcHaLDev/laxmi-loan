@@ -59,11 +59,12 @@ String title;
     }
 
     public void registerNowHandler(View view) {
-        new Loadads().interstitialAdLoad(this);
+
         parms.setPassword(password.getText().toString());
         parms.setAddress(address.toString());
         parms.setMobile(mobile.getText().toString());
-
-        startActivity(new Intent(MainActivity2.this,MainActivity.class));
+        Intent i =new Intent(this,MainActivity.class);
+        parms.setHome(false);
+        startActivity(i);
     }
 }

@@ -3,14 +3,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.Fragment;
-
-import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,20 +15,10 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.Toast;
-
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.OnUserEarnedRewardListener;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
-import com.google.android.gms.ads.rewarded.RewardItem;
-import com.google.android.gms.ads.rewarded.RewardedAd;
-import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.gms.ads.interstitial.InterstitialAd;
-import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 
 public class MainActivity extends AppCompatActivity {
 BottomNavigationView bottomNavigationView;
@@ -94,8 +81,21 @@ startActivity(j);
         editor=sharedPreferences.edit();
 if(!sharedPreferences.getBoolean("permission",false)){
     welcomeDialogs();
+}else{
+    letStartDialog=new Dialog(MainActivity.this);
+    letStartDialog.getWindow().setBackgroundDrawable(getResources().getDrawable(R.drawable.card_backgr));
+    letStartDialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.MATCH_PARENT);
+    letStartDialog.setContentView(R.layout.lat_start_layout);
+    permissionCheckBox=findViewById(R.id.permissionCheckBox);
+    if(parms.isHome()){
+        letStartDialog.show();
+    }
+    parms.setHome(true);
 }
+
   }
+
+
 
     private void welcomeDialogs(){
         //Dialogs setup start
@@ -138,8 +138,11 @@ if(permission==true){
 
     }
     public void clickLetStart(View view) {
-                letStartDialog.dismiss();
 
+                letStartDialog.dismiss();
+                Intent i=new Intent(MainActivity.this,Categories.class);
+        startActivity(i);
+        finish();
     }
 
     public void isCheckedPermission(View view) {

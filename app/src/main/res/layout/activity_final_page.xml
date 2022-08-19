@@ -14,6 +14,14 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical">
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adViewFinal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="320x100"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -178,7 +186,7 @@ android:id="@+id/panCard"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            ads:adSize="400x250"
+            ads:adSize="320x100"
             ads:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
 
         <LinearLayout
@@ -194,11 +202,11 @@ android:id="@+id/panCard"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:text="Apply Now"
-                android:onClick="finished"
+                android:onClick="showAlertDialogButtonClicked"
                 android:textColor="@android:color/background_light"
                 android:textStyle="bold" />
         </LinearLayout>
-        <include layout="@layout/card_ads_box"/>
+
     </LinearLayout>
 </ScrollView>
 

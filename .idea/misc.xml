@@ -65,6 +65,7 @@
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/drawable/ic_money_transactions_icon.xml" value="0.1365" />
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/drawable/ic_school_solid.xml" value="0.1405" />
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/drawable/ic_tabindicator.xml" value="0.1275" />
+        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/activity_about_page.xml" value="0.1796875" />
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/activity_ads.xml" value="0.16018518518518518" />
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/activity_categories.xml" value="0.1" />
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/activity_final_page.xml" value="0.29505582137161085" />
@@ -78,9 +79,12 @@
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/activity_main2.xml" value="0.1328125" />
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/activity_privacy_policy.xml" value="0.1" />
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/activity_tearm_condition.xml" value="0.1" />
+        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/activity_term_condition.xml" value="0.1796875" />
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/bottam_manu.xml" value="0.1796875" />
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/card_apply_now.xml" value="0.1796875" />
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/cash_loan.xml" value="0.1796875" />
+        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/congrat.xml" value="0.1796875" />
+        <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/dot_loader.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/fragment_dashboard.xml" value="0.1796875" />
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/ok/AndroidStudioProjects/GetLoan/app/src/main/res/layout/fragment_log_in.xml" value="0.1796875" />

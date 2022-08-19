@@ -10,7 +10,7 @@ public class AboutPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_page);
-        new Loadads().interstitialAdLoad(AboutPage.this);
+        new Loadads().interstitialAdLoad(this);
         new Loadads().adsBanner(findViewById(R.id.adViewAbout));
     }
 }

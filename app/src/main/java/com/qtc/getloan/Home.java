@@ -20,19 +20,6 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Toast;
-
-import com.google.android.gms.ads.AdError;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.FullScreenContentCallback;
-import com.google.android.gms.ads.LoadAdError;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
-import com.google.android.gms.ads.interstitial.InterstitialAd;
-import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
-
 
 public class Home extends Fragment {
 
@@ -49,16 +36,16 @@ public class Home extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
+        new Loadads().interstitialAdLoad(getActivity());
   View  view=inflater.inflate(R.layout.fragment_home,container,false);
 
   caseLoanBanner=view.findViewById(R.id.caseLoanBanner);
         caseLoanBanner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new Loadads().interstitialAdLoad(getActivity());
 
-                Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
+
+                Intent i =new Intent(getActivity().getApplicationContext(),LoanStep1.class);
                 i.putExtra("title","Cash Loan");
                 getActivity().startActivity(i);
             }
@@ -68,7 +55,7 @@ public class Home extends Fragment {
 //        mutualFundBanner.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
-//                new Loadads().interstitialAdLoad(getActivity());
+//
 //                Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
 //                i.putExtra("title","Mutual Fund");
 //                getActivity().startActivity(i);
@@ -78,7 +65,7 @@ public class Home extends Fragment {
         personalLoanBanner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new Loadads().interstitialAdLoad(getActivity());
+
                 Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
                 i.putExtra("title","Personal Loan");
                 getActivity().startActivity(i);
@@ -88,8 +75,8 @@ public class Home extends Fragment {
         homeLoanBanner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new Loadads().interstitialAdLoad(getActivity());
-                Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
+
+                Intent i =new Intent(getActivity().getApplicationContext(),Categories.class);
                 i.putExtra("title","Home Loan");
                 getActivity().startActivity(i);
             }
@@ -98,8 +85,8 @@ public class Home extends Fragment {
         loanAgentProperty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new Loadads().interstitialAdLoad(getActivity());
-                Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
+
+                Intent i =new Intent(getActivity().getApplicationContext(),LoanStep1.class);
                 i.putExtra("title","Loan Agent Property");
                 getActivity().startActivity(i);
             }
@@ -108,8 +95,8 @@ public class Home extends Fragment {
         transferExistingLoan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new Loadads().interstitialAdLoad(getActivity());
-                Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
+
+                Intent i =new Intent(getActivity().getApplicationContext(),LoanStep2.class);
                 i.putExtra("title","Transfer Existing Loan");
                 getActivity().startActivity(i);
             }
@@ -118,8 +105,8 @@ public class Home extends Fragment {
         newHomeLoanBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new Loadads().interstitialAdLoad(getActivity());
-                Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
+
+                Intent i =new Intent(getActivity().getApplicationContext(),Categories.class);
                 i.putExtra("title","New Home Loan");
                 getActivity().startActivity(i);
             }
@@ -129,8 +116,8 @@ public class Home extends Fragment {
         applyNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new Loadads().interstitialAdLoad(getActivity());
-                Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
+
+                Intent i =new Intent(getActivity().getApplicationContext(),Categories.class);
                 i.putExtra("title","Apply Now ");
                 getActivity().startActivity(i);
             }
@@ -141,7 +128,7 @@ new Loadads().adsBanner(view.findViewById(R.id.adView));
 new Loadads().adsBanner(view.findViewById(R.id.adViewHome2));
 new Loadads().adsBanner(view.findViewById(R.id.adViewStep4));
       //////////////////////////////////////////
-        new Loadads().interstitialAdLoad(getActivity());
+
 
         return view;
 
@@ -149,7 +136,9 @@ new Loadads().adsBanner(view.findViewById(R.id.adViewStep4));
     }
 
 
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-
-
+    }
 }
