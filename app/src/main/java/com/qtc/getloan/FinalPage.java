@@ -58,8 +58,9 @@ getSupportActionBar().setTitle("Loan Details");
                 alertDialog.dismiss();
                 new Loadads().interstitialAdLoad(FinalPage.this);
                 Intent i=new Intent(FinalPage.this,MainActivity.class);
-                parms.setHome(false);
+                parms.setHome(true);
                 startActivity(i);
+//                finish();
             }
         });
 

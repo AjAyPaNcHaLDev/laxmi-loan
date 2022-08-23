@@ -39,7 +39,7 @@ String title;
         inpDob=findViewById(R.id.inpDob);
         register_part_one=findViewById(R.id.register_part_one);
                 register_part_second=findViewById(R.id.register_part_second);
-
+        parms.setHome(false);
     }
 
     public void changeRegisterLayoutHandler(View view) {
@@ -63,8 +63,10 @@ String title;
         parms.setPassword(password.getText().toString());
         parms.setAddress(address.toString());
         parms.setMobile(mobile.getText().toString());
-        Intent i =new Intent(this,MainActivity.class);
-        parms.setHome(false);
-        startActivity(i);
+//        Intent i =new Intent(this,LoanStep1.class);
+
+//        startActivity(i);
+        finish();
+
     }
 }

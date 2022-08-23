@@ -48,4 +48,10 @@ return;
         i.setData(Uri.parse("https://theinsuranceupdates.com"));
         startActivity(i);
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        parms.setHome(true);
+    }
 }

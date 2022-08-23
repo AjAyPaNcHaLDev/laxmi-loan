@@ -14,4 +14,9 @@ public class TermCondition extends AppCompatActivity {
         new Loadads().adsBanner(findViewById(R.id.adViewStep14));
         new Loadads().adsBanner(findViewById(R.id.adViewStep15));
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        parms.setHome(true);
+    }
 }

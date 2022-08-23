@@ -129,7 +129,7 @@ new Loadads().adsBanner(view.findViewById(R.id.adViewHome2));
 new Loadads().adsBanner(view.findViewById(R.id.adViewStep4));
       //////////////////////////////////////////
 
-
+        parms.setHome(false);
         return view;
 
 

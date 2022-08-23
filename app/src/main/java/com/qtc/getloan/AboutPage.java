@@ -13,4 +13,9 @@ public class AboutPage extends AppCompatActivity {
         new Loadads().interstitialAdLoad(this);
         new Loadads().adsBanner(findViewById(R.id.adViewAbout));
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        parms.setHome(true);
+    }
 }

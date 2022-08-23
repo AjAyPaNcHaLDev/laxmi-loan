@@ -2,7 +2,7 @@ package com.qtc.getloan;
 
 public class parms {
    public static String name,email,dob,gender,pan_card,amount,time,job,password,address,mobile,Loan;
-public  static boolean home=true;
+public  static boolean home;
     public static boolean isHome() {
         return home;
     }

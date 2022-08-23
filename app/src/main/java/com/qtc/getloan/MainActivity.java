@@ -28,7 +28,7 @@ BottomNavigationView bottomNavigationView;
     Dialog  letStartDialog;
     Button terms_and_conditions;
 public static  final String SHARED_PREF="SHARED_PREF";
-    boolean permission=false;
+
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
     @Override
@@ -77,21 +77,21 @@ startActivity(j);
                 return true;
             }
         });
-         sharedPreferences= getSharedPreferences(SHARED_PREF,MODE_PRIVATE);
-        editor=sharedPreferences.edit();
-if(!sharedPreferences.getBoolean("permission",false)){
+//         sharedPreferences= getSharedPreferences(SHARED_PREF,MODE_PRIVATE);
+//        editor=sharedPreferences.edit();
+//if(!sharedPreferences.getBoolean("permission",false)){
     welcomeDialogs();
-}else{
-    letStartDialog=new Dialog(MainActivity.this);
-    letStartDialog.getWindow().setBackgroundDrawable(getResources().getDrawable(R.drawable.card_backgr));
-    letStartDialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.MATCH_PARENT);
-    letStartDialog.setContentView(R.layout.lat_start_layout);
-    permissionCheckBox=findViewById(R.id.permissionCheckBox);
-    if(parms.isHome()){
-        letStartDialog.show();
-    }
-    parms.setHome(true);
-}
+//}else{
+//    letStartDialog=new Dialog(MainActivity.this);
+//    letStartDialog.getWindow().setBackgroundDrawable(getResources().getDrawable(R.drawable.card_backgr));
+//    letStartDialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.MATCH_PARENT);
+//    letStartDialog.setContentView(R.layout.lat_start_layout);
+//    permissionCheckBox=findViewById(R.id.permissionCheckBox);
+//    if(parms.isHome()){
+//        letStartDialog.show();
+//    }
+//    parms.setHome(true);
+//}
 
   }
 
@@ -126,36 +126,41 @@ if(!sharedPreferences.getBoolean("permission",false)){
 
     public void clickAgree(View view) {
 
-if(permission==true){
-    editor.putBoolean("permission",true);
-    editor.apply();
-    permissionDialog.dismiss();
-    letStartDialog.show();
-}else
-    editor.putBoolean("permission",false);
-        editor.apply();
-    Toast.makeText(MainActivity.this," please click to checkbox",Toast.LENGTH_LONG).show();
-
+//if(permission==true){
+//    editor.putBoolean("permission",true);/
+//    editor.apply();
+//    permissionDialog.dismiss();
+//    new Loadads().interstitialAdLoad(MainActivity.this);
+//    letStartDialog.show();
+//}else
+//    editor.putBoolean("permission",false);
+//        editor.apply();
+//    Toast.makeText(MainActivity.this," please click to checkbox",Toast.LENGTH_LONG).show();
+        permissionDialog.dismiss();
+        new Loadads().interstitialAdLoad(MainActivity.this);
+        letStartDialog.show();
     }
     public void clickLetStart(View view) {
 
                 letStartDialog.dismiss();
-                Intent i=new Intent(MainActivity.this,Categories.class);
-        startActivity(i);
-        finish();
+                if(!parms.isHome()){
+                    Intent i=new Intent(MainActivity.this,MainActivity2.class);
+                    startActivity(i);
+                }
     }
 
-    public void isCheckedPermission(View view) {
-        CheckBox checkBox = (CheckBox)view;
-        if(checkBox.isChecked())
-            permission=true;
-        else
-            permission=false;
-    }
+//    public void isCheckedPermission(View view) {
+//        CheckBox checkBox = (CheckBox)view;
+//        if(checkBox.isChecked())
+//            permission=true;
+//        else
+//            permission=false;
+//    }
 
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+//        new Loadads().interstitialAdLoad(getActivity());
 
     }
 
@@ -171,4 +176,6 @@ if(permission==true){
     public void termsCondition(View view) {
         startActivity(new Intent(MainActivity.this, TermCondition.class));
     }
+
+   
 }
