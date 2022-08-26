@@ -28,14 +28,13 @@ public class Loadads extends AppCompatActivity {
    public static  AdRequest adRequest ;
     private AlertDialog dialog;
     public  void interstitialAdLoad(Activity activity) {
+        startLoadingdialog(activity);
         adRequest = new AdRequest.Builder().build();
   InterstitialAd.load(activity, "ca-app-pub-3940256099942544/1033173712", adRequest,
                 new InterstitialAdLoadCallback() {
                     @Override
                     public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
-                        // The mInterstitialAd reference will be null until
-                        // an ad is loaded.
-//                        dotLoading.hide();
+
                          mInterstitialAd = interstitialAd;
                         mInterstitialAd.show((activity));
                         dismissdialog();
@@ -52,14 +51,14 @@ public class Loadads extends AppCompatActivity {
 
                 });
 
-        startLoadingdialog(activity);
+
     }
     @SuppressLint("InflateParams")
     void startLoadingdialog(Activity activity) {
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
         LayoutInflater inflater = activity.getLayoutInflater();
         builder.setView(inflater.inflate(R.layout.dot_loader, null));
-        builder.setCancelable(true);
+        builder.setCancelable(false);
         dialog = builder.create();
         dialog.show();
     }

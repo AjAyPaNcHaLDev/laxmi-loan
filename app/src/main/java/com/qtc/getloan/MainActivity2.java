@@ -29,7 +29,7 @@ String title;
         new Loadads().adsBanner(findViewById(R.id.adViewStep11));
     title=intent.getStringExtra("title");
 
-    getSupportActionBar().setTitle(title);
+    getSupportActionBar().setTitle("Fill Form");
         name=findViewById(R.id.name);
                 email=findViewById(R.id.email);
         gender=findViewById(R.id.gender);
@@ -66,7 +66,10 @@ String title;
 //        Intent i =new Intent(this,LoanStep1.class);
 
 //        startActivity(i);
-        finish();
+        new Loadads().interstitialAdLoad(this);
+        startActivity(new Intent(MainActivity2.this,LoanStep1.class));
+
+//        finish();
 
     }
 }

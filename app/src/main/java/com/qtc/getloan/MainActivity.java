@@ -137,16 +137,18 @@ startActivity(j);
 //        editor.apply();
 //    Toast.makeText(MainActivity.this," please click to checkbox",Toast.LENGTH_LONG).show();
         permissionDialog.dismiss();
-        new Loadads().interstitialAdLoad(MainActivity.this);
+//        new Loadads().interstitialAdLoad(MainActivity.this);
         letStartDialog.show();
     }
     public void clickLetStart(View view) {
 
                 letStartDialog.dismiss();
-                if(!parms.isHome()){
-                    Intent i=new Intent(MainActivity.this,MainActivity2.class);
-                    startActivity(i);
-                }
+        new Loadads().interstitialAdLoad(this);
+
+//                if(!parms.isHome()){
+//                    Intent i=new Intent(MainActivity.this,MainActivity2.class);
+//                    startActivity(i);
+//                }
     }
 
 //    public void isCheckedPermission(View view) {

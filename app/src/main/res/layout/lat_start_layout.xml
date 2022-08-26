@@ -96,7 +96,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Customized offer"
+                android:text="Hassle free process"
                 android:padding="5dp"
                 android:textSize="20dp"
                 android:fontFamily="sans-serif-black"
@@ -106,7 +106,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="2dp"
-                android:text="Best-in-market"/>
+                android:text="Minimum documentation"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -130,7 +130,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Customized offer"
+                android:text="Instant disbursal"
                 android:padding="5dp"
                 android:textSize="20dp"
                 android:fontFamily="sans-serif-black"
@@ -140,7 +140,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="2dp"
-                android:text="Best-in-market"/>
+                android:text="In a few minutes"/>
         </LinearLayout>
 
     </LinearLayout>

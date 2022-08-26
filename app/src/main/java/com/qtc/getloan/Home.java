@@ -45,7 +45,7 @@ public class Home extends Fragment {
             public void onClick(View view) {
 
 
-                Intent i =new Intent(getActivity().getApplicationContext(),LoanStep1.class);
+                Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
                 i.putExtra("title","Cash Loan");
                 getActivity().startActivity(i);
             }
@@ -76,7 +76,7 @@ public class Home extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Intent i =new Intent(getActivity().getApplicationContext(),Categories.class);
+                Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
                 i.putExtra("title","Home Loan");
                 getActivity().startActivity(i);
             }
@@ -106,7 +106,7 @@ public class Home extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Intent i =new Intent(getActivity().getApplicationContext(),Categories.class);
+                Intent i =new Intent(getActivity().getApplicationContext(),LoanStep1.class);
                 i.putExtra("title","New Home Loan");
                 getActivity().startActivity(i);
             }
@@ -117,7 +117,7 @@ public class Home extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Intent i =new Intent(getActivity().getApplicationContext(),Categories.class);
+                Intent i =new Intent(getActivity().getApplicationContext(),LoanStep1.class);
                 i.putExtra("title","Apply Now ");
                 getActivity().startActivity(i);
             }

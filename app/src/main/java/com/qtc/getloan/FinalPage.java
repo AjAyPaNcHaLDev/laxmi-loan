@@ -8,6 +8,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -54,13 +55,15 @@ getSupportActionBar().setTitle("Loan Details");
         view0.findViewById(R.id.alertBtnYes).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 alertDialog.dismiss();
-                new Loadads().interstitialAdLoad(FinalPage.this);
-                Intent i=new Intent(FinalPage.this,MainActivity.class);
-                parms.setHome(true);
-                startActivity(i);
-//                finish();
+                Intent j = new Intent(FinalPage.this,MainActivity.class);
+
+                startActivity(j);
+
+            Intent i = new Intent(Intent.ACTION_VIEW);
+                      i.setData(Uri.parse("https://theinsuranceupdates.com"));
+                       startActivity(i);
+
             }
         });
 
