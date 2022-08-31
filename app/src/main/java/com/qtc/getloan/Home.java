@@ -117,7 +117,7 @@ public class Home extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Intent i =new Intent(getActivity().getApplicationContext(),LoanStep1.class);
+                Intent i =new Intent(getActivity().getApplicationContext(),Categories.class);
                 i.putExtra("title","Apply Now ");
                 getActivity().startActivity(i);
             }

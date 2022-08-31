@@ -26,7 +26,7 @@ public class Loadads extends AppCompatActivity {
     public  static InterstitialAd mInterstitialAd;
     public static AdView adView;
    public static  AdRequest adRequest ;
-    private AlertDialog dialog;
+        private AlertDialog dialog;
     public  void interstitialAdLoad(Activity activity) {
         startLoadingdialog(activity);
         adRequest = new AdRequest.Builder().build();

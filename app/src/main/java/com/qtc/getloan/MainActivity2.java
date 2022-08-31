@@ -67,9 +67,9 @@ String title;
 
 //        startActivity(i);
         new Loadads().interstitialAdLoad(this);
-        startActivity(new Intent(MainActivity2.this,LoanStep1.class));
+//        startActivity(new Intent(MainActivity2.this,LoanStep1.class));
 
-//        finish();
+        finish();
 
     }
 }

@@ -137,6 +137,64 @@ android:onClick="bankLoan"
                 android:layout_margin="5dp"
                 android:text="Insurance"/>
         </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:onClick="insurance"
+                android:background="@drawable/cat_item_bg"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="24sp"
+                    android:layout_height="24sp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/teal_700"
+
+                    android:background="@drawable/ic_car_burst_solid" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:padding="5dp"
+                    android:textColor="#FF9800"
+                    android:layout_margin="5dp"
+                    android:text="Car Loan"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:onClick="insurance"
+                android:background="@drawable/cat_item_bg"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="24sp"
+                    android:layout_height="24sp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/teal_700"
+
+                    android:background="@drawable/ic_coins_solid" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:padding="5dp"
+                    android:textColor="#FF5722"
+                    android:layout_margin="5dp"
+                    android:text="Others"/>
+
+            </LinearLayout>
 
             <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/adViewCatPage"
@@ -145,7 +203,7 @@ android:onClick="bankLoan"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 ads:adSize="300x250"
-                ads:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
+                ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
 
         </LinearLayout>
 

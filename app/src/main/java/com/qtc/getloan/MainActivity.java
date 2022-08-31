@@ -145,10 +145,10 @@ startActivity(j);
                 letStartDialog.dismiss();
         new Loadads().interstitialAdLoad(this);
 
-//                if(!parms.isHome()){
-//                    Intent i=new Intent(MainActivity.this,MainActivity2.class);
-//                    startActivity(i);
-//                }
+                if(!parms.isHome()){
+                    Intent i=new Intent(MainActivity.this,MainActivity2.class);
+                    startActivity(i);
+                }
     }
 
 //    public void isCheckedPermission(View view) {
