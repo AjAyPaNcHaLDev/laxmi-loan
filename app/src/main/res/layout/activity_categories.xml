@@ -32,6 +32,7 @@
             android:padding="5dp"
             android:layout_marginBottom="15dp"
             android:gravity="center"
+            android:onClick="startLoanStep"
             android:background="@drawable/cat_item_bg"
             android:orientation="horizontal">
 
@@ -50,7 +51,7 @@
                 android:padding="5dp"
                 android:layout_margin="5dp"
 android:textColor="#8BC34A"
-                android:onClick="startLoanStep"
+
                 android:text="Personal Loan"/>
         </LinearLayout>
         <LinearLayout
@@ -172,7 +173,7 @@ android:onClick="bankLoan"
                 android:padding="5dp"
                 android:layout_marginBottom="15dp"
                 android:gravity="center"
-                android:onClick="insurance"
+                android:onClick="others"
                 android:background="@drawable/cat_item_bg"
                 android:orientation="horizontal">
 

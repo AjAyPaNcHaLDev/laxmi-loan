@@ -9,7 +9,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
-
         android:background="@android:color/white"
         >
         <LinearLayout
@@ -47,10 +46,11 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="208dp"
-                android:id="@+id/mutualFundBanner"
+                android:id="@+id/carLoanBanner"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:layout_margin="10dp"
+                android:scaleType="fitXY"
                 android:src="@drawable/car_laon" />
 
         </LinearLayout>

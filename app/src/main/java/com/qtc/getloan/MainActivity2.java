@@ -69,7 +69,11 @@ String title;
         new Loadads().interstitialAdLoad(this);
 //        startActivity(new Intent(MainActivity2.this,LoanStep1.class));
 
+        if (parms.isVisit())
         finish();
+        else
+    startActivity(new Intent(MainActivity2.this,LoanStep1.class));
+
 
     }
 }

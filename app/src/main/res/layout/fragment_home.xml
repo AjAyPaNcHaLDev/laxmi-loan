@@ -54,6 +54,7 @@
         </LinearLayout>
         <include layout="@layout/personal_loan"/>
 
+        <include layout="@layout/cash_loan"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:gravity="center"
@@ -66,10 +67,12 @@
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 ads:adSize="300x250"
-                ads:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
+                ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
 
         </LinearLayout>
-        <include layout="@layout/cash_loan"/>
+
+        <include layout="@layout/car_loan"/>
+
     </LinearLayout>
 
     </ScrollView>

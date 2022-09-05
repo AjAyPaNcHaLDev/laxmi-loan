@@ -148,6 +148,7 @@ startActivity(j);
                 if(!parms.isHome()){
                     Intent i=new Intent(MainActivity.this,MainActivity2.class);
                     startActivity(i);
+                    parms.setVisit(true);
                 }
     }
 

@@ -29,7 +29,7 @@ public class Home extends Fragment {
             transferExistingLoan;
             ImageView caseLoanBanner,
             personalLoanBanner,
-            mutualFundBanner,
+                    carLoanBanner,
             homeLoanBanner;
             LinearLayout applyNow;
 
@@ -43,9 +43,7 @@ public class Home extends Fragment {
         caseLoanBanner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
-                Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
+  Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
                 i.putExtra("title","Cash Loan");
                 getActivity().startActivity(i);
             }
@@ -65,7 +63,7 @@ public class Home extends Fragment {
         personalLoanBanner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                parms.setVisit(false);
                 Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
                 i.putExtra("title","Personal Loan");
                 getActivity().startActivity(i);
@@ -75,7 +73,7 @@ public class Home extends Fragment {
         homeLoanBanner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                parms.setVisit(false);
                 Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
                 i.putExtra("title","Home Loan");
                 getActivity().startActivity(i);
@@ -85,8 +83,8 @@ public class Home extends Fragment {
         loanAgentProperty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent i =new Intent(getActivity().getApplicationContext(),LoanStep1.class);
+                parms.setVisit(false);
+                Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
                 i.putExtra("title","Loan Agent Property");
                 getActivity().startActivity(i);
             }
@@ -95,8 +93,8 @@ public class Home extends Fragment {
         transferExistingLoan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent i =new Intent(getActivity().getApplicationContext(),LoanStep2.class);
+                parms.setVisit(false);
+                Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
                 i.putExtra("title","Transfer Existing Loan");
                 getActivity().startActivity(i);
             }
@@ -105,8 +103,8 @@ public class Home extends Fragment {
         newHomeLoanBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent i =new Intent(getActivity().getApplicationContext(),LoanStep1.class);
+                parms.setVisit(false);
+                Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
                 i.putExtra("title","New Home Loan");
                 getActivity().startActivity(i);
             }
@@ -116,13 +114,22 @@ public class Home extends Fragment {
         applyNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                parms.setVisit(false);
                 Intent i =new Intent(getActivity().getApplicationContext(),Categories.class);
                 i.putExtra("title","Apply Now ");
                 getActivity().startActivity(i);
             }
         });
-
+        carLoanBanner=view.findViewById(R.id.carLoanBanner);
+        carLoanBanner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                parms.setVisit(false);
+                Intent i =new Intent(getActivity().getApplicationContext(),MainActivity2.class);
+                i.putExtra("title","Car Loan");
+                getActivity().startActivity(i);
+            }
+        });
 
 new Loadads().adsBanner(view.findViewById(R.id.adView));
 new Loadads().adsBanner(view.findViewById(R.id.adViewHome2));

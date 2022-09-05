@@ -19,30 +19,41 @@ public class Categories extends AppCompatActivity {
         new Loadads().adsBanner(findViewById(R.id.adViewCatPage));
 
     }
-
     public void startLoanStep(View view) {
-        if(parms.getName()==null||parms.getGender()==null||parms.getDob()==null){
-            Toast.makeText(getApplicationContext(),"please register first",Toast.LENGTH_LONG).show();
-            Intent i=new Intent(Categories.this,MainActivity2.class);
-            startActivity(i);
-return;
-        }
-        Intent i=new Intent(Categories.this,LoanStep1.class);
+        parms.setVisit(false);
+        Intent i=new Intent(Categories.this,MainActivity2.class);
         startActivity(i);
+
     }
+//    public void startLoanStep(View view) {
+//        if(parms.getName()==null||parms.getGender()==null||parms.getDob()==null){
+//            Toast.makeText(getApplicationContext(),"please register first",Toast.LENGTH_LONG).show();
+//            Intent i=new Intent(Categories.this,MainActivity2.class);
+//            startActivity(i);
+//return;
+//        }
+//        Intent i=new Intent(Categories.this,LoanStep1.class);
+//        startActivity(i);
+//    }
 
     public void studentLoan(View view) {
-
-        startActivity(  new Intent(Categories.this,LoanStep3.class));
+        parms.setVisit(false);
+        startActivity(  new Intent(Categories.this,MainActivity2.class));
     }
 
     public void bankLoan(View view) {
 
+        parms.setVisit(false);
 
         startActivity(  new Intent(Categories.this,MainActivity2.class));
     }
 
     public void insurance(View view) {
+        new Loadads().interstitialAdLoad(this);
+parms.setVisit(false);
+        startActivity(  new Intent(Categories.this,MainActivity2.class));
+    }
+    public void others(View view) {
         new Loadads().interstitialAdLoad(this);
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse("https://theinsuranceupdates.com"));

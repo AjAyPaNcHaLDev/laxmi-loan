@@ -2,7 +2,16 @@ package com.qtc.getloan;
 
 public class parms {
    public static String name,email,dob,gender,pan_card,amount,time,job,password,address,mobile,Loan;
-public  static boolean home;
+public  static boolean home,visit;
+
+    public static boolean isVisit() {
+        return visit;
+    }
+
+    public static void setVisit(boolean visit) {
+        parms.visit = visit;
+    }
+
     public static boolean isHome() {
         return home;
     }
