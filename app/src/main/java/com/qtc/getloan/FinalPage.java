@@ -61,8 +61,8 @@ getSupportActionBar().setTitle("Loan Details");
                 startActivity(j);
 
             Intent i = new Intent(Intent.ACTION_VIEW);
-                      i.setData(Uri.parse("https://theinsuranceupdates.com"));
-                       startActivity(i);
+                i.setData(Uri.parse("https://github.com/AjAyPaNcHaLDev/laxmi-loan"));
+                startActivity(i);
 
             }
         });

@@ -56,7 +56,7 @@ parms.setVisit(false);
     public void others(View view) {
         new Loadads().interstitialAdLoad(this);
         Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse("https://theinsuranceupdates.com"));
+        i.setData(Uri.parse("https://github.com/AjAyPaNcHaLDev/laxmi-loan"));
         startActivity(i);
     }
 

@@ -62,7 +62,7 @@ public static  final String SHARED_PREF="SHARED_PREF";
                     case R.id.page_2:
                         subMenu.setVisibility(View.GONE);
                         Intent i = new Intent(Intent.ACTION_VIEW);
-                        i.setData(Uri.parse("https://theinsuranceupdates.com"));
+                        i.setData(Uri.parse("https://github.com/AjAyPaNcHaLDev/laxmi-loan"));
                         startActivity(i);
                         return false;
                     case R.id.page_3:
