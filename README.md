@@ -59,14 +59,7 @@
         <img align="center" src="https://github.com/AjAyPaNcHaLDev/laxmi-loan/blob/main/screens-shots/screen/screen_12.jpg" alt="screen_12"  width="200" height="400" />
      </td>
  </tr> 
-   <tr>
-    <td >
-        <img align="center" src="https://github.com/AjAyPaNcHaLDev/laxmi-loan/blob/main/screens-shots/screen/screen_13.jpg" alt="screen_13"  width="200" height="400" />
-     </td>
-    <td >
-        <img align="center" src="https://github.com/AjAyPaNcHaLDev/laxmi-loan/blob/main/screens-shots/screen/screen_14.jpg" alt="screen_14"  width="200" height="400" />
-     </td>
- </tr> 
+
 </table>
  
 
