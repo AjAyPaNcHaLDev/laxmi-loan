@@ -17,7 +17,7 @@
         <img align="center" src="https://github.com/AjAyPaNcHaLDev/laxmi-loan/blob/main/screens-shots/screen/screen_1.jpg" alt="screen_1"  width="200" height="400" />
      </td>
     <td >
-        <img align="center" src="https://github.com/AjAyPaNcHaLDev/laxmi-loan/blob/main/screens-shots/screen/screen_2.jpg" alt="screen_3"  width="200" height="400" />
+        <img align="center" src="https://github.com/AjAyPaNcHaLDev/laxmi-loan/blob/main/screens-shots/screen/screen_2.jpg" alt="screen_2"  width="200" height="400" />
      </td>
     <td >
         <img align="center" src="https://github.com/AjAyPaNcHaLDev/laxmi-loan/blob/main/screens-shots/screen/screen_3.jpg" alt="screen_3"  width="200" height="400" />
