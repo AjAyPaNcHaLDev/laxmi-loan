@@ -55,9 +55,6 @@
     <td >
         <img align="center" src="https://github.com/AjAyPaNcHaLDev/laxmi-loan/blob/main/screens-shots/screen/screen_11.jpg" alt="screen_11"  width="200" height="400" />
      </td>
-    <td >
-        <img align="center" src="https://github.com/AjAyPaNcHaLDev/laxmi-loan/blob/main/screens-shots/screen/screen_12.jpg" alt="screen_12"  width="200" height="400" />
-     </td>
  </tr> 
 
 </table>
